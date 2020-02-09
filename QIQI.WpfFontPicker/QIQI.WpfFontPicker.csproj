@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <TargetFrameworks>net40;netcoreapp3.0</TargetFrameworks>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <UseWPF>true</UseWPF>
+    <PackageId>QIQI.WpfFontPicker</PackageId>
+    <Authors>QIQI</Authors>
+    <Company>QIQI&lt;Email: 1354092549@qq.com&gt;</Company>
+    <Product>QIQI.WpfFontPicker</Product>
+    <RepositoryUrl>https://github.com/1354092549/WpfFontPicker</RepositoryUrl>
+    <RootNamespace>QIQI.WpfFontPicker</RootNamespace>
+    <AssemblyName>QIQI.WpfFontPicker</AssemblyName>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>WPF;Font;FontDialog;FontPicker</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)'=='net40'">
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>
