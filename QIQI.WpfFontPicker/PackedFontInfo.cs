@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Globalization;
 using System.Runtime.Serialization;
 using System.Windows;
@@ -9,6 +10,7 @@ using System.Windows.Media;
 namespace QIQI.WpfFontPicker
 {
     [Serializable]
+    [SettingsSerializeAs(SettingsSerializeAs.Binary)]
     public class PackedFontInfo : IEquatable<PackedFontInfo>, ISerializable
     {
         public FontFamily Family { get; }
